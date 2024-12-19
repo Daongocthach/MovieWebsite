@@ -466,8 +466,10 @@ ol {
 
 .hero__text .label {
 	font-size: 13px;
-	color: #479de3;
+	font-weight: 700;
+	color: #a9b7b7;
 	background: #ffffff;
+	border-radius: 5px;
 	padding: 5px 14px 3px;
 	display: inline-block;
 	position: relative;
@@ -582,49 +584,56 @@ ol {
 }
 
 .hero__slider.owl-carousel .owl-nav button {
-	font-size: 36px;
-	height: 66px;
-	width: 66px;
-	background: #0b0c2a;
-	line-height: 66px;
-	text-align: center;
-	color: #ffffff;
-	-webkit-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	transform: rotate(45deg);
-	position: relative;
-	z-index: 1;
-	position: absolute;
-	left: -33px;
-	top: 50%;
-	margin-top: -47px;
+    font-size: 24px;
+    height: 66px;
+    width: 66px;
+    background: #25282c;
+    border: none; 
+    border-radius: 50%; 
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+    position: absolute;
+    left: -33px;
+    top: 50%;
+    margin-top: -33px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .hero__slider.owl-carousel .owl-nav button.owl-next {
-	left: auto;
-	right: -33px;
+    left: auto;
+    right: -33px;
 }
 
 .hero__slider.owl-carousel .owl-nav button:after {
-	position: absolute;
-	top: 6px;
-	left: 0;
-	right: 0;
-	height: 54px;
-	width: 54px;
-	background: rgba(255, 255, 255, 0.1);
-	content: "";
-	z-index: -1;
-	margin: 0 auto;
+    position: absolute;
+    top: 6px;
+    left: 0;
+    right: 0;
+    height: 54px;
+    width: 54px;
+    background: rgba(255, 255, 255, 0.1);
+    content: "";
+    z-index: -1;
+    margin: 0 auto;
+    border-radius: 50%;
 }
 
 .hero__slider.owl-carousel .owl-nav button span {
-	-webkit-transform: rotate(-45deg);
-	-ms-transform: rotate(-45deg);
-	transform: rotate(-45deg);
-	display: block;
-	z-index: 1;
+    transform: rotate(0);
+    display: block;
+    z-index: 1;
 }
+
+.hero__slider.owl-carousel .owl-nav button:hover {
+    background: #479de3;
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
 
 /*---------------------
   Product
