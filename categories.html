@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Stone Movies | Categories</title>
-
+    <link rel="icon" type="image/svg+xml" href="./img/icon.png" />
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
@@ -51,30 +51,32 @@
                                     <ul class="dropdown">
                                         <li class="dropdown-column">
                                             <a href="./categories.html?slug=hanh-dong">Hành Động</a>
-                                            <a href="./categories.html?slug=tinh-cam">Tình Cảm</a>
-                                            <a href="./categories.html?slug=hai-huoc">Hài Hước</a>
-                                            <a href="./categories.html?slug=co-trang">Cổ Trang</a>
-                                            <a href="./categories.html?slug=tam-ly">Tâm Lý</a>
-                                            <a href="./categories.html?slug=hinh-su">Hình Sự</a>
-                                            <a href="./categories.html?slug=chien-tranh">Chiến Tranh</a>
-                                            <a href="./categories.html?slug=the-thao">Thể Thao</a>
-                                        </li>
-                                        <li class="dropdown-column">
-                                            <a href="./categories.html?slug=vo-thuat">Võ Thuật</a>
-                                            <a href="./categories.html?slug=vien-tuong">Viễn Tưởng</a>
                                             <a href="./categories.html?slug=phieu-luu">Phiêu Lưu</a>
-                                            <a href="./categories.html?slug=khoa-hoc">Khoa Học</a>
-                                            <a href="./categories.html?slug=kinh-di">Kinh Dị</a>
-                                            <a href="./categories.html?slug=am-nhac">Âm Nhạc</a>
-                                            <a href="./categories.html?slug=than-thoai">Thần Thoại</a>
+                                            <a href="./categories.html?slug=hoat-hinh">Hoạt Hình</a>
+                                            <a href="./categories.html?slug=hai">Hài</a>
+                                            <a href="./categories.html?slug=hinh-su">Hình Sự</a>
                                             <a href="./categories.html?slug=tai-lieu">Tài Liệu</a>
                                         </li>
                                         <li class="dropdown-column">
-                                            <a href="./categories.html?slug=gia-dinh">Gia Đình</a>
                                             <a href="./categories.html?slug=chinh-kich">Chính Kịch</a>
+                                            <a href="./categories.html?slug=gia-dinh">Gia Đình</a>
+                                            <a href="./categories.html?slug=gia-tuong">Giả Tưởng</a>
+                                            <a href="./categories.html?slug=lich-su">Lịch Sử</a>
+                                            <a href="./categories.html?slug=kinh-di">Kinh Dị</a>
+                                            <a href="./categories.html?slug=nhac">Nhạc</a>
+                                        </li>
+                                        <li class="dropdown-column">
                                             <a href="./categories.html?slug=bi-an">Bí Ẩn</a>
-                                            <a href="./categories.html?slug=hoc-duong">Học Đường</a>
-                                            <a href="./categories.html?slug=kinh-dien">Kinh Điển</a>
+                                            <a href="./categories.html?slug=lang-man">Lãng Mạn</a>
+                                            <a href="./categories.html?slug=khoa-hoc-vien-tuong">Khoa Học Viễn Tưởng</a>
+                                            <a href="./categories.html?slug=gay-can">Gây Cấn</a>
+                                            <a href="./categories.html?slug=chien-tranh">Chiến Tranh</a>
+                                            <a href="./categories.html?slug=tam-ly">Tâm Lý</a>
+                                        </li>
+                                        <li class="dropdown-column">
+                                            <a href="./categories.html?slug=tinh-cam">Tình Cảm</a>
+                                            <a href="./categories.html?slug=co-trang">Cổ Trang</a>
+                                            <a href="./categories.html?slug=mien-tay">Miền Tây</a>
                                             <a href="./categories.html?slug=phim-18">Phim 18+</a>
                                         </li>
                                     </ul>
@@ -105,7 +107,7 @@
                     <div class="breadcrumb__links">
                         <a href="./index.html"><i class="fa fa-home"></i> Home</a>
                         <a href="./categories.html">Categories</a>
-                        <span id="breadcrumb-category">Romance</span>
+                        <span id="breadcrumb-category">N/A</span>
                     </div>
                 </div>
             </div>
@@ -128,7 +130,7 @@
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-6">
                                     <div class="product__page__filter">
-                                        <p>Order by:</p>
+                                        <p>Sắp xếp:</p>
                                         <select>
                                             <option value="">A-Z</option>
                                             <option value="">1-10</option>
@@ -138,65 +140,72 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row" id="movie-container"></div>
+                        <div class="loading row" id="movie-container"></div>
                     </div>
-                    <div class="product__pagination">
-                        <a href="#" class="current-page">1</a>
+                    <div id="pagination-container" class="product__pagination">
+                        <!-- <a href="#" class="current-page">1</a>
                         <a href="#">2</a>
                         <a href="#">3</a>
                         <a href="#">4</a>
                         <a href="#">5</a>
-                        <a href="#"><i class="fa fa-angle-double-right"></i></a>
+                        <a href="#"><i class="fa fa-angle-double-right"></i></a> -->
                     </div>
                 </div>
+
                 <div class="col-lg-4 col-md-6 col-sm-8">
                     <div class="product__sidebar">
                         <div class="product__sidebar__view">
                             <div class="section-title">
-                                <h5>Top Views</h5>
+                                <h5>Xem nhiều nhất</h5>
                             </div>
                             <ul class="filter__controls">
-                                <li class="active" data-filter="*">Day</li>
-                                <li data-filter=".week">Week</li>
-                                <li data-filter=".month">Month</li>
-                                <li data-filter=".years">Years</li>
+                                <li class="active" data-filter="*">Ngày</li>
+                                <li data-filter=".week">Tuần</li>
+                                <li data-filter=".month">Tháng</li>
+                                <li data-filter=".years">Năm</li>
                             </ul>
                             <div class="filter__gallery">
                                 <div class="product__sidebar__view__item set-bg mix day years"
                                     data-setbg="img/sidebar/tv-1.jpg">
                                     <div class="ep">18 / ?</div>
                                     <div class="view"><i class="fa fa-eye"></i> 9141</div>
-                                    <h5><a href="#">Boruto: Naruto next generations</a></h5>
+                                    <h5><a href="./anime-watching.html?slug=boruto-naruto-the-he-ke-tiep">Boruto: Naruto
+                                            next generations</a></h5>
                                 </div>
                                 <div class="product__sidebar__view__item set-bg mix month week"
                                     data-setbg="img/sidebar/tv-2.jpg">
                                     <div class="ep">18 / ?</div>
                                     <div class="view"><i class="fa fa-eye"></i> 9141</div>
-                                    <h5><a href="#">The Seven Deadly Sins: Wrath of the Gods</a></h5>
+                                    <h5><a href="./anime-watching.html?slug=that-hinh-dai-toi-4">The Seven Deadly Sins:
+                                            Wrath of the Gods</a></h5>
                                 </div>
                                 <div class="product__sidebar__view__item set-bg mix week years"
                                     data-setbg="img/sidebar/tv-3.jpg">
                                     <div class="ep">18 / ?</div>
                                     <div class="view"><i class="fa fa-eye"></i> 9141</div>
-                                    <h5><a href="#">Sword art online alicization war of underworld</a></h5>
+                                    <h5><a href="./anime-watching.html?slug=sword-art-online">Sword art online
+                                            alicization war of underworld</a></h5>
                                 </div>
                                 <div class="product__sidebar__view__item set-bg mix years month"
                                     data-setbg="img/sidebar/tv-4.jpg">
                                     <div class="ep">18 / ?</div>
                                     <div class="view"><i class="fa fa-eye"></i> 9141</div>
-                                    <h5><a href="#">Fate/stay night: Heaven's Feel I. presage flower</a></h5>
+                                    <h5><a
+                                            href="./anime-watching.html?slug=fatestay-night-heavens-feel-ii-lost-butterfly">Fate/stay
+                                            night: Heaven's Feel I. presage flower</a></h5>
                                 </div>
                                 <div class="product__sidebar__view__item set-bg mix day"
                                     data-setbg="img/sidebar/tv-5.jpg">
                                     <div class="ep">18 / ?</div>
                                     <div class="view"><i class="fa fa-eye"></i> 9141</div>
-                                    <h5><a href="#">Fate stay night unlimited blade works</a></h5>
+                                    <h5><a href="./anime-watching.html?slug=dem-dinh-menh-vo-han-kiem-gioi">Fate stay
+                                            night unlimited blade works</a></h5>
                                 </div>
                             </div>
                         </div>
                         <div class="product__sidebar__comment">
                             <div class="section-title">
-                                <h5>New Comment</h5>
+                                <h5>Top bình chọn</h5>
                             </div>
                             <div class="product__sidebar__comment__item">
                                 <div class="product__sidebar__comment__item__pic">
@@ -207,7 +216,8 @@
                                         <li>Active</li>
                                         <li>Movie</li>
                                     </ul>
-                                    <h5><a href="#">The Seven Deadly Sins: Wrath of the Gods</a></h5>
+                                    <h5><a href="./anime-watching.html?slug=that-hinh-dai-toi-4">The Seven Deadly Sins:
+                                            Wrath of the Gods</a></h5>
                                     <span><i class="fa fa-eye"></i> 19.141 Viewes</span>
                                 </div>
                             </div>
@@ -233,7 +243,8 @@
                                         <li>Active</li>
                                         <li>Movie</li>
                                     </ul>
-                                    <h5><a href="#">Kizumonogatari III: Reiket su-hen</a></h5>
+                                    <h5><a href="./anime-watching.html?slug=kizumonogatari-phan-3-lanh-huyet">Kizumonogatari
+                                            III: Reiket su-hen</a></h5>
                                     <span><i class="fa fa-eye"></i> 19.141 Viewes</span>
                                 </div>
                             </div>
@@ -246,7 +257,8 @@
                                         <li>Active</li>
                                         <li>Movie</li>
                                     </ul>
-                                    <h5><a href="#">Monogatari Series: Second Season</a></h5>
+                                    <h5><a href="./anime-watching.html?slug=chuyen-tinh-cua-toi">Monogatari Series:
+                                            Second Season</a></h5>
                                     <span><i class="fa fa-eye"></i> 19.141 Viewes</span>
                                 </div>
                             </div>
@@ -314,64 +326,79 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
     <script>
-        // Function to fetch data from the API
-        async function fetchData(slug) {
+        async function fetchData(slug, page = 1) {
             try {
-                const apiUrl = `https://ophim1.com/phim/${slug}`;
+                const apiUrl = `https://phim.nguonc.com/api/films/the-loai/${slug}?page=${page}`;
                 const response = await fetch(apiUrl);
                 const data = await response.json();
-
-                // Update the category title and breadcrumb
                 document.getElementById('breadcrumb-category').textContent = slug.replace(/-/g, ' ').toUpperCase();
                 document.getElementById('title-category').textContent = slug.replace(/-/g, ' ').toUpperCase();
-
-                // Render movie data
-                const movieList = data.pageProps.data.items || [];
+    
+                const movieList = data.items || [];
                 const movieContainer = document.getElementById('movie-container');
                 movieContainer.innerHTML = '';
-
-                movieList.forEach((movie) => {
+    
+                if (movieList.length === 0) {
+                    movieContainer.innerHTML = '<p>Không có phim nào trong thể loại này.</p>';
+                    return;
+                }
+    
+                movieList.forEach((item) => {
                     const movieItem = `
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="product__item">
-                                    <div class="product__item__pic set-bg" style="background-image: url(${movie.thumb_url});">
-                                        <div class="ep">${movie.episode_current || "?"}</div>
-                                        <div class="comment"><i class="fa fa-comments"></i> ${movie.comments || 0}</div>
-                                        <div class="view"><i class="fa fa-eye"></i> ${movie.view || 0}</div>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <ul>
-                                            <li>${movie.status}</li>
-                                            <li>${movie.type}</li>
-                                        </ul>
-                                        <h5><a href="/phim/${movie.slug}">${movie.name}</a></h5>
-                                    </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" 
+                                    style="background-image: url('${item?.thumb_url}');">
+                                    <div class="ep">${item?.current_episode}</div>
+                                    <div class="comment"><i class="fa-solid fa-clapperboard"></i>Số tập: ${item?.total_episodes}</div>
+                                    <div class="view"><i class="fa-solid fa-clock"></i> ${item?.time}</div>
+                                </div>
+                                <div class="product__item__text">
+                                    <ul>
+                                        <li>Tác giả: ${item?.director}</li>
+                                        <li>Số tập: ${item?.total_episodes}</li>
+                                    </ul>
+                                    <h5><a href="./anime-details.html?slug=${item?.slug}">${item?.name}</a></h5>
                                 </div>
                             </div>
-                        `;
+                        </div>
+                    `;
                     movieContainer.innerHTML += movieItem;
                 });
+    
+                updatePagination(data.paginate, slug);
             } catch (error) {
                 console.error("Error fetching data:", error);
             }
         }
-
-        // Function to get slug from URL
-        function getSlugFromUrl() {
-            const urlParams = new URLSearchParams(window.location.search);
-            return urlParams.get('slug');
+    
+        function updatePagination(pagination, slug) {
+            const paginationContainer = document.getElementById('pagination-container');
+            paginationContainer.innerHTML = '';
+    
+            if (pagination?.total_page > 1) {
+                let paginationHtml = '';
+                for (let i = 1; i <= pagination?.total_page; i++) {
+                    paginationHtml += `
+                        <a class="${pagination?.current_page === i ? 'current-page' : ''}" href="?slug=${slug}&page=${i}">${i}</a>
+                    `;
+                }
+                paginationContainer.innerHTML = `${paginationHtml}`;
+            }
         }
-
-        // Run fetchData on page load
+    
         document.addEventListener('DOMContentLoaded', function () {
-            const slug = getSlugFromUrl();
+            const urlParams = new URLSearchParams(window.location.search);
+            const slug = urlParams.get('slug');
+            const page = urlParams.get('page') || 1;
             if (slug) {
-                fetchData(slug);
+                fetchData(slug, page);
             } else {
                 console.warn("Không tìm thấy slug trong URL.");
             }
         });
     </script>
+    
 </body>
 
 </html>

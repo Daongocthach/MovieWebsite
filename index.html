@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Stone Movies | Home</title>
-
+    <link rel="icon" type="image/svg+xml" href="./img/icon.png" />
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
@@ -51,30 +51,32 @@
                                     <ul class="dropdown">
                                         <li class="dropdown-column">
                                             <a href="./categories.html?slug=hanh-dong">Hành Động</a>
-                                            <a href="./categories.html?slug=tinh-cam">Tình Cảm</a>
-                                            <a href="./categories.html?slug=hai-huoc">Hài Hước</a>
-                                            <a href="./categories.html?slug=co-trang">Cổ Trang</a>
-                                            <a href="./categories.html?slug=tam-ly">Tâm Lý</a>
-                                            <a href="./categories.html?slug=hinh-su">Hình Sự</a>
-                                            <a href="./categories.html?slug=chien-tranh">Chiến Tranh</a>
-                                            <a href="./categories.html?slug=the-thao">Thể Thao</a>
-                                        </li>
-                                        <li class="dropdown-column">
-                                            <a href="./categories.html?slug=vo-thuat">Võ Thuật</a>
-                                            <a href="./categories.html?slug=vien-tuong">Viễn Tưởng</a>
                                             <a href="./categories.html?slug=phieu-luu">Phiêu Lưu</a>
-                                            <a href="./categories.html?slug=khoa-hoc">Khoa Học</a>
-                                            <a href="./categories.html?slug=kinh-di">Kinh Dị</a>
-                                            <a href="./categories.html?slug=am-nhac">Âm Nhạc</a>
-                                            <a href="./categories.html?slug=than-thoai">Thần Thoại</a>
+                                            <a href="./categories.html?slug=hoat-hinh">Hoạt Hình</a>
+                                            <a href="./categories.html?slug=hai">Hài</a>
+                                            <a href="./categories.html?slug=hinh-su">Hình Sự</a>
                                             <a href="./categories.html?slug=tai-lieu">Tài Liệu</a>
                                         </li>
                                         <li class="dropdown-column">
-                                            <a href="./categories.html?slug=gia-dinh">Gia Đình</a>
                                             <a href="./categories.html?slug=chinh-kich">Chính Kịch</a>
+                                            <a href="./categories.html?slug=gia-dinh">Gia Đình</a>
+                                            <a href="./categories.html?slug=gia-tuong">Giả Tưởng</a>
+                                            <a href="./categories.html?slug=lich-su">Lịch Sử</a>
+                                            <a href="./categories.html?slug=kinh-di">Kinh Dị</a>
+                                            <a href="./categories.html?slug=nhac">Nhạc</a>
+                                        </li>
+                                        <li class="dropdown-column">
                                             <a href="./categories.html?slug=bi-an">Bí Ẩn</a>
-                                            <a href="./categories.html?slug=hoc-duong">Học Đường</a>
-                                            <a href="./categories.html?slug=kinh-dien">Kinh Điển</a>
+                                            <a href="./categories.html?slug=lang-man">Lãng Mạn</a>
+                                            <a href="./categories.html?slug=khoa-hoc-vien-tuong">Khoa Học Viễn Tưởng</a>
+                                            <a href="./categories.html?slug=gay-can">Gây Cấn</a>
+                                            <a href="./categories.html?slug=chien-tranh">Chiến Tranh</a>
+                                            <a href="./categories.html?slug=tam-ly">Tâm Lý</a>
+                                        </li>
+                                        <li class="dropdown-column">
+                                            <a href="./categories.html?slug=tinh-cam">Tình Cảm</a>
+                                            <a href="./categories.html?slug=co-trang">Cổ Trang</a>
+                                            <a href="./categories.html?slug=mien-tay">Miền Tây</a>
                                             <a href="./categories.html?slug=phim-18">Phim 18+</a>
                                         </li>
                                     </ul>
@@ -161,10 +163,10 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="hero__text">
-                                <div class="label">Phiêu lưu</div>
-                                <h2>Fate / Stay Night: Unlimited Blade Works</h2>
-                                <p>Chén Thánh là một bảo vật huyền thoại có...</p>
-                                <a href="./anime-watching.html?slug=dem-dinh-menh-vo-han-kiem-gioi">
+                                <div class="label">Hành động</div>
+                                <h2>The Amazing Spiderman 2</h2>
+                                <p>Trong bản làm lại của bộ phim siêu anh hùng này...</p>
+                                <a href="./anime-watching.html?slug=nguoi-nhen-sieu-dang">
                                     <span>Xem Ngay</span> <i class="fa fa-angle-right"></i>
                                 </a>
                             </div>
@@ -185,7 +187,7 @@
                         <div class="row">
                             <div class="col-lg-8 col-md-8 col-sm-8">
                                 <div class="section-title">
-                                    <h4>Hot nhất</h4>
+                                    <h4>Mới cập nhật</h4>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-4">
@@ -194,13 +196,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row" id="movie-list"></div>
+                        <div id="movies-newest" class="row movies-container loading"></div>
                     </div>
                     <div class="popular__product">
                         <div class="row">
                             <div class="col-lg-8 col-md-8 col-sm-8">
                                 <div class="section-title">
-                                    <h4>Phổ biến</h4>
+                                    <h4>Phim đang chiếu</h4>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-4">
@@ -209,13 +211,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row" id="movies-popular"></div>
+                        <div id="movies-now" class="row movies-container loading"></div>
                     </div>
                     <div class="recent__product">
                         <div class="row">
                             <div class="col-lg-8 col-md-8 col-sm-8">
                                 <div class="section-title">
-                                    <h4>Phim mới</h4>
+                                    <h4>Phim bộ</h4>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-4">
@@ -224,13 +226,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row" id="movies-new"></div>
+                        <div id="movies-series" class="row movies-container loading"></div>
                     </div>
                     <div class="live__product">
                         <div class="row">
                             <div class="col-lg-8 col-md-8 col-sm-8">
                                 <div class="section-title">
-                                    <h4>Live Action</h4>
+                                    <h4>Phim lẻ</h4>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-4">
@@ -239,7 +241,22 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row" id="movies-live-action"></div>
+                        <div id="movies-short" class="row movies-container loading"></div>
+                    </div>
+                    <div class="live__product">
+                        <div class="row">
+                            <div class="col-lg-8 col-md-8 col-sm-8">
+                                <div class="section-title">
+                                    <h4>Tv Shows</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="btn__all">
+                                    <a href="#" class="primary-btn">Xem tất cả <span class="arrow_right"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="movies-tv-shows" class="row movies-container loading"></div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-8">
@@ -259,31 +276,37 @@
                                     data-setbg="img/sidebar/tv-1.jpg">
                                     <div class="ep">18 / ?</div>
                                     <div class="view"><i class="fa fa-eye"></i> 9141</div>
-                                    <h5><a href="./anime-watching.html?slug=boruto-naruto-the-he-ke-tiep">Boruto: Naruto next generations</a></h5>
+                                    <h5><a href="./anime-watching.html?slug=boruto-naruto-the-he-ke-tiep">Boruto: Naruto
+                                            next generations</a></h5>
                                 </div>
                                 <div class="product__sidebar__view__item set-bg mix month week"
                                     data-setbg="img/sidebar/tv-2.jpg">
                                     <div class="ep">18 / ?</div>
                                     <div class="view"><i class="fa fa-eye"></i> 9141</div>
-                                    <h5><a href="./anime-watching.html?slug=that-hinh-dai-toi-4">The Seven Deadly Sins: Wrath of the Gods</a></h5>
+                                    <h5><a href="./anime-watching.html?slug=that-hinh-dai-toi-4">The Seven Deadly Sins:
+                                            Wrath of the Gods</a></h5>
                                 </div>
                                 <div class="product__sidebar__view__item set-bg mix week years"
                                     data-setbg="img/sidebar/tv-3.jpg">
                                     <div class="ep">18 / ?</div>
                                     <div class="view"><i class="fa fa-eye"></i> 9141</div>
-                                    <h5><a href="./anime-watching.html?slug=sword-art-online">Sword art online alicization war of underworld</a></h5>
+                                    <h5><a href="./anime-watching.html?slug=sword-art-online">Sword art online
+                                            alicization war of underworld</a></h5>
                                 </div>
                                 <div class="product__sidebar__view__item set-bg mix years month"
                                     data-setbg="img/sidebar/tv-4.jpg">
                                     <div class="ep">18 / ?</div>
                                     <div class="view"><i class="fa fa-eye"></i> 9141</div>
-                                    <h5><a href="./anime-watching.html?slug=fatestay-night-heavens-feel-ii-lost-butterfly">Fate/stay night: Heaven's Feel I. presage flower</a></h5>
+                                    <h5><a
+                                            href="./anime-watching.html?slug=fatestay-night-heavens-feel-ii-lost-butterfly">Fate/stay
+                                            night: Heaven's Feel I. presage flower</a></h5>
                                 </div>
                                 <div class="product__sidebar__view__item set-bg mix day"
                                     data-setbg="img/sidebar/tv-5.jpg">
                                     <div class="ep">18 / ?</div>
                                     <div class="view"><i class="fa fa-eye"></i> 9141</div>
-                                    <h5><a href="./anime-watching.html?slug=dem-dinh-menh-vo-han-kiem-gioi">Fate stay night unlimited blade works</a></h5>
+                                    <h5><a href="./anime-watching.html?slug=dem-dinh-menh-vo-han-kiem-gioi">Fate stay
+                                            night unlimited blade works</a></h5>
                                 </div>
                             </div>
                         </div>
@@ -300,7 +323,8 @@
                                         <li>Active</li>
                                         <li>Movie</li>
                                     </ul>
-                                    <h5><a href="./anime-watching.html?slug=that-hinh-dai-toi-4">The Seven Deadly Sins: Wrath of the Gods</a></h5>
+                                    <h5><a href="./anime-watching.html?slug=that-hinh-dai-toi-4">The Seven Deadly Sins:
+                                            Wrath of the Gods</a></h5>
                                     <span><i class="fa fa-eye"></i> 19.141 Viewes</span>
                                 </div>
                             </div>
@@ -326,7 +350,8 @@
                                         <li>Active</li>
                                         <li>Movie</li>
                                     </ul>
-                                    <h5><a href="./anime-watching.html?slug=kizumonogatari-phan-3-lanh-huyet">Kizumonogatari III: Reiket su-hen</a></h5>
+                                    <h5><a href="./anime-watching.html?slug=kizumonogatari-phan-3-lanh-huyet">Kizumonogatari
+                                            III: Reiket su-hen</a></h5>
                                     <span><i class="fa fa-eye"></i> 19.141 Viewes</span>
                                 </div>
                             </div>
@@ -339,7 +364,8 @@
                                         <li>Active</li>
                                         <li>Movie</li>
                                     </ul>
-                                    <h5><a href="./anime-watching.html?slug=chuyen-tinh-cua-toi">Monogatari Series: Second Season</a></h5>
+                                    <h5><a href="./anime-watching.html?slug=chuyen-tinh-cua-toi">Monogatari Series:
+                                            Second Season</a></h5>
                                     <span><i class="fa fa-eye"></i> 19.141 Viewes</span>
                                 </div>
                             </div>
@@ -407,108 +433,66 @@
     <script src="js/main.js"></script>
     <script>
         async function fetchData() {
-            try {
-                const response = await fetch('https://ophim1.com/danh-sach/phim-moi-cap-nhat?page=1');
-                const data = await response.json();
+            const urls = [
+                { url: 'https://phim.nguonc.com/api/films/phim-moi-cap-nhat?page=1', containerId: 'movies-newest' },
+                { url: 'https://phim.nguonc.com/api/films/danh-sach/phim-dang-chieu?page=1', containerId: 'movies-now' },
+                { url: 'https://phim.nguonc.com/api/films/danh-sach/phim-bo?page=1', containerId: 'movies-series' },
+                { url: 'https://phim.nguonc.com/api/films/danh-sach/phim-le?page=11', containerId: 'movies-short' },
+                { url: 'https://phim.nguonc.com/api/films/danh-sach/tv-shows?page=1', containerId: 'movies-tv-shows' },
+            ];
 
-                const container = document.getElementById('movie-list');
-                const moviesPopular = document.getElementById('movies-popular');
-                const moviesNew = document.getElementById('movies-new');
-                const moviesLiveAction = document.getElementById('movies-live-action');
-                data.items.slice(0, 6).forEach(item => {
-                    const movieHtml = `
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="product__item">
-                                <div class="product__item__pic set-bg" 
-                                    style="background-image: url('${data.pathImage + item.poster_url}');">
-                                    <div class="ep">Năm: ${item.year}</div>
-                                    <div class="comment"><i class="fa fa-comments"></i> ${item.tmdb.vote_count}</div>
-                                    <div class="view"><i class="fa fa-eye"></i> ${item.tmdb.vote_average}</div>
-                                </div>
-                                <div class="product__item__text">
-                                    <ul>
-                                        <li>${item.tmdb.type === 'tv' ? 'TV Show' : 'Movie'}</li>
-                                        <li>${item.origin_name}</li>
-                                    </ul>
-                                    <h5><a href="./anime-details.html?slug=${item.slug}">${item.name}</a></h5>
-                                </div>
-                            </div>
-                        </div>
-                    `;
-                    container.innerHTML += movieHtml;
+            const renderSkeleton = () => {
+                urls.forEach(({ containerId }) => {
+                    const container = document.getElementById(containerId);
+                    container.classList.add('loading');
                 });
-                data.items.slice(6, 12).forEach(item => {
-                    const movieHtml = `
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="product__item">
-                                <div class="product__item__pic set-bg" 
-                                    style="background-image: url('${data.pathImage + item.poster_url}');">
-                                    <div class="ep">Năm: ${item.year}</div>
-                                    <div class="comment"><i class="fa fa-comments"></i> ${item.tmdb.vote_count}</div>
-                                    <div class="view"><i class="fa fa-eye"></i> ${item.tmdb.vote_average}</div>
-                                </div>
-                                <div class="product__item__text">
-                                    <ul>
-                                        <li>${item.tmdb.type === 'tv' ? 'TV Show' : 'Movie'}</li>
-                                        <li>${item.origin_name}</li>
-                                    </ul>
-                                    <h5><a href="./anime-details.html?slug=${item.slug}">${item.name}</a></h5>
-                                </div>
-                            </div>
-                        </div>
-                    `;
-                    moviesNew.innerHTML += movieHtml;
-                });
-                data.items.slice(12, 18).forEach(item => {
-                    const movieHtml = `
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="product__item">
-                                <div class="product__item__pic set-bg" 
-                                    style="background-image: url('${data.pathImage + item.poster_url}');">
-                                    <div class="ep">Năm: ${item.year}</div>
-                                    <div class="comment"><i class="fa fa-comments"></i> ${item.tmdb.vote_count}</div>
-                                    <div class="view"><i class="fa fa-eye"></i> ${item.tmdb.vote_average}</div>
-                                </div>
-                                <div class="product__item__text">
-                                    <ul>
-                                        <li>${item.tmdb.type === 'tv' ? 'TV Show' : 'Movie'}</li>
-                                        <li>${item.origin_name}</li>
-                                    </ul>
-                                    <h5><a href="./anime-details.html?slug=${item.slug}">${item.name}</a></h5>
-                                </div>
-                            </div>
-                        </div>
-                    `;
-                    moviesLiveAction.innerHTML += movieHtml;
-                });
-                data.items.slice(18, 24).forEach(item => {
-                    const movieHtml = `
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="product__item">
-                                <div class="product__item__pic set-bg" 
-                                    style="background-image: url('${data.pathImage + item.poster_url}');">
-                                    <div class="ep">Năm: ${item.year}</div>
-                                    <div class="comment"><i class="fa fa-comments"></i> ${item.tmdb.vote_count}</div>
-                                    <div class="view"><i class="fa fa-eye"></i> ${item.tmdb.vote_average}</div>
-                                </div>
-                                <div class="product__item__text">
-                                    <ul>
-                                        <li>${item.tmdb.type === 'tv' ? 'TV Show' : 'Movie'}</li>
-                                        <li>${item.origin_name}</li>
-                                    </ul>
-                                    <h5><a href="./anime-details.html?slug=${item.slug}">${item.name}</a></h5>
-                                </div>
-                            </div>
-                        </div>
-                    `;
-                    moviesPopular.innerHTML += movieHtml;
+            };
+
+            const removeSkeleton = (container) => {
+                container.classList.remove('loading');
+            };
+
+            renderSkeleton();
+
+            try {
+                const responses = await Promise.all(urls.map(item => fetch(item.url).then(res => res.json())));
+
+                responses.forEach((data, index) => {
+                    const containerId = urls[index].containerId;
+                    const container = document.getElementById(containerId);
+
+                    renderMovies(container, data);
+                    removeSkeleton(container);
                 });
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
         }
 
-        // Call fetchData when the page loads
+        function renderMovies(container, data) {
+            container.innerHTML = data.items
+                .slice(0, 6)
+                .map(item => `
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" 
+                                style="background-image: url('${item?.thumb_url}');">
+                                <div class="ep">${item?.current_episode}</div>
+                                <div class="comment"><i class="fa-solid fa-closed-captioning"></i>${item?.language}</div>
+                                <div class="view"><i class="fa-solid fa-clock"></i> ${item?.time}</div>
+                            </div>
+                            <div class="product__item__text">
+                                <ul>
+                                    <li>Tác giả: ${item?.director}</li>
+                                    <li>Số tập: ${item?.total_episodes}</li>
+                                </ul>
+                                <h5><a href="./anime-details.html?slug=${item.slug}">${item.name}</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+        }
+
         fetchData();
     </script>
 

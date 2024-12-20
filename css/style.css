@@ -2358,3 +2358,13 @@ ol {
 		padding: 18px 20px 20px;
 	}
 }
+.loading {
+	min-height: 200px;
+	background: #25282c;
+	background-size: 200% 100%;
+	animation: skeleton-loading 1.5s infinite;
+}
+@keyframes skeleton-loading {
+	0% { background-position: 200% 0; }
+	100% { background-position: -200% 0; }
+}
