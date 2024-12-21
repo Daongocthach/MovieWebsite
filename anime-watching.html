@@ -207,8 +207,9 @@
     <div class="search-model">
         <div class="h-100 d-flex align-items-center justify-content-center">
             <div class="search-close-switch"><i class="icon_close"></i></div>
-            <form class="search-model-form">
+            <form class="search-model-form" id="search-form">
                 <input type="text" id="search-input" placeholder="Search here.....">
+                <button type="submit" class="site-btn">Submit</button>
             </form>
         </div>
     </div>
@@ -303,13 +304,11 @@
             }
         }
 
-        // Function to get slug from URL
         function getSlugFromUrl() {
             const urlParams = new URLSearchParams(window.location.search);
             return urlParams.get("slug");
         }
 
-        // Run fetchData on page load
         document.addEventListener("DOMContentLoaded", function () {
             const slug = getSlugFromUrl();
             if (slug) {

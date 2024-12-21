@@ -309,8 +309,9 @@
     <div class="search-model">
         <div class="h-100 d-flex align-items-center justify-content-center">
             <div class="search-close-switch"><i class="icon_close"></i></div>
-            <form class="search-model-form">
+            <form class="search-model-form" id="search-form">
                 <input type="text" id="search-input" placeholder="Search here.....">
+                <button type="submit" class="site-btn">Submit</button>
             </form>
         </div>
     </div>
@@ -326,23 +327,27 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
     <script>
-        async function fetchData(slug, page = 1) {
+        async function fetchData(isSearch, slug, page = 1) {
             try {
-                const apiUrl = `https://phim.nguonc.com/api/films/the-loai/${slug}?page=${page}`;
+                let apiUrl = `https://phim.nguonc.com/api/films/the-loai/${slug}?page=${page}`
+                if (isSearch) {
+                    apiUrl = `https://phim.nguonc.com/api/films/search?keyword=${slug}&page=${page}`;
+                }
+                console.log("Fetching data from:", apiUrl);
                 const response = await fetch(apiUrl);
                 const data = await response.json();
                 document.getElementById('breadcrumb-category').textContent = slug.replace(/-/g, ' ').toUpperCase();
                 document.getElementById('title-category').textContent = slug.replace(/-/g, ' ').toUpperCase();
-    
+
                 const movieList = data.items || [];
                 const movieContainer = document.getElementById('movie-container');
                 movieContainer.innerHTML = '';
-    
+
                 if (movieList.length === 0) {
-                    movieContainer.innerHTML = '<p>Không có phim nào trong thể loại này.</p>';
+                    movieContainer.innerHTML = '<p style="color: white; padding: 10px">Không có phim nào trong thể loại này.</p>';
                     return;
                 }
-    
+
                 movieList.forEach((item) => {
                     const movieItem = `
                         <div class="col-lg-4 col-md-6 col-sm-6">
@@ -365,17 +370,17 @@
                     `;
                     movieContainer.innerHTML += movieItem;
                 });
-    
+
                 updatePagination(data.paginate, slug);
             } catch (error) {
                 console.error("Error fetching data:", error);
             }
         }
-    
+
         function updatePagination(pagination, slug) {
             const paginationContainer = document.getElementById('pagination-container');
             paginationContainer.innerHTML = '';
-    
+
             if (pagination?.total_page > 1) {
                 let paginationHtml = '';
                 for (let i = 1; i <= pagination?.total_page; i++) {
@@ -386,19 +391,24 @@
                 paginationContainer.innerHTML = `${paginationHtml}`;
             }
         }
-    
+
         document.addEventListener('DOMContentLoaded', function () {
             const urlParams = new URLSearchParams(window.location.search);
             const slug = urlParams.get('slug');
+            const keyword = urlParams.get('keyword');
             const page = urlParams.get('page') || 1;
             if (slug) {
-                fetchData(slug, page);
-            } else {
+                fetchData(false, slug, page);
+            } else if (keyword) {
+                fetchData(true, keyword, page);
+            }
+            else {
                 console.warn("Không tìm thấy slug trong URL.");
             }
         });
+
     </script>
-    
+
 </body>
 
 </html>

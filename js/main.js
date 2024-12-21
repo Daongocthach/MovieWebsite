@@ -99,3 +99,14 @@
      });
 
 })(jQuery);
+
+document.getElementById('search-form').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const inputElement = document.getElementById('search-input');
+    const keyword = encodeURIComponent(inputElement.value.trim());
+
+    if (keyword) {
+        window.location.href = `./categories.html?keyword=${keyword}`;
+    }
+});
