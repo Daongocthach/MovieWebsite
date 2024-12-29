@@ -193,8 +193,12 @@ ol {
 	border-radius: 2px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-	display: inline-block;
+	display: flex;
 	padding: 12px 30px;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
 }
 
 /* Preloder */
@@ -292,6 +296,9 @@ ol {
 
 .search-model-form {
 	padding: 0 15px;
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
 }
 
 .search-model-form input {
