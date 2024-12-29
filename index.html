@@ -77,7 +77,7 @@
                                             <a href="./categories.html?slug=tinh-cam">Tình Cảm</a>
                                             <a href="./categories.html?slug=co-trang">Cổ Trang</a>
                                             <a href="./categories.html?slug=mien-tay">Miền Tây</a>
-                                            
+
                                         </li>
                                     </ul>
                                 </li>
@@ -103,34 +103,6 @@
     <section class="hero">
         <div class="container">
             <div class="hero__slider owl-carousel">
-                <div class="hero__items set-bg" data-setbg="img/hero/hero-5.jpg">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="hero__text">
-                                <div class="label">Hành động</div>
-                                <h2>Iron man 3</h2>
-                                <p>Người Iron Man 3" của Marvel's hố Brash...</p>
-                                <a href="./anime-details.html?slug=nguoi-sat-3">
-                                    <span>Xem Ngay</span> <i class="fa fa-angle-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero__items set-bg" data-setbg="img/hero/hero-4.jpg">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="hero__text">
-                                <div class="label">Hành động</div>
-                                <h2>Avenger Endgame</h2>
-                                <p>Sau những sự kiện tàn khốc của Avengersd...</p>
-                                <a href="./anime-details.html?slug=avengers-hoi-ket">
-                                    <span>Xem Ngay</span> <i class="fa fa-angle-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="hero__items set-bg" data-setbg="img/hero/hero-3.jpg">
                     <div class="row">
                         <div class="col-lg-6">
@@ -159,20 +131,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="hero__items set-bg" data-setbg="img/hero/hero-1.jpg">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="hero__text">
-                                <div class="label">Hành động</div>
-                                <h2>The Amazing Spiderman 2</h2>
-                                <p>Trong bản làm lại của bộ phim siêu anh hùng này...</p>
-                                <a href="./anime-details.html?slug=nguoi-nhen-sieu-dang">
-                                    <span>Xem Ngay</span> <i class="fa fa-angle-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -192,11 +150,15 @@
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-4">
                                 <div class="btn__all">
-                                    <a href="./categories.html?slug=hanh-dong" class="primary-btn">Xem tất cả <span class="arrow_right"></span></a>
+                                    <a href="./categories.html?slug=hanh-dong" class="primary-btn">Xem tất cả <span
+                                            class="arrow_right"></span></a>
                                 </div>
                             </div>
                         </div>
-                        <div id="movies-newest" class="row movies-container loading"></div>
+                        <div id="movies-newest" class="row movies-container loading movie-section"
+                            data-url="https://phim.nguonc.com/api/films/phim-moi-cap-nhat?page=1"
+                            data-container-id="movies-newest">
+                        </div>
                     </div>
                     <div class="popular__product">
                         <div class="row">
@@ -207,11 +169,16 @@
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-4">
                                 <div class="btn__all">
-                                    <a href="./categories.html?slug=hanh-dong" class="primary-btn">Xem tất cả <span class="arrow_right"></span></a>
+                                    <a href="./categories.html?slug=hanh-dong" class="primary-btn">Xem tất cả <span
+                                            class="arrow_right"></span></a>
                                 </div>
                             </div>
                         </div>
-                        <div id="movies-now" class="row movies-container loading"></div>
+                        <!-- <div id="movies-now" class="row movies-container loading"></div> -->
+                        <div id="movies-now" class="row movies-container loading movie-section"
+                            data-url="https://phim.nguonc.com/api/films/danh-sach/phim-dang-chieu?page=1"
+                            data-container-id="movies-now">
+                        </div>
                     </div>
                     <div class="recent__product">
                         <div class="row">
@@ -222,11 +189,16 @@
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-4">
                                 <div class="btn__all">
-                                    <a href="./categories.html?slug=hanh-dong" class="primary-btn">Xem tất cả <span class="arrow_right"></span></a>
+                                    <a href="./categories.html?slug=hanh-dong" class="primary-btn">Xem tất cả <span
+                                            class="arrow_right"></span></a>
                                 </div>
                             </div>
                         </div>
-                        <div id="movies-series" class="row movies-container loading"></div>
+                        <!-- <div id="movies-series" class="row movies-container loading"></div> -->
+                        <div id="movies-series" class="row movies-container loading movie-section"
+                            data-url="https://phim.nguonc.com/api/films/danh-sach/phim-bo?page=1"
+                            data-container-id="movies-series">
+                        </div>
                     </div>
                     <div class="live__product">
                         <div class="row">
@@ -237,11 +209,16 @@
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-4">
                                 <div class="btn__all">
-                                    <a href="./categories.html?slug=hanh-dong" class="primary-btn">Xem tất cả <span class="arrow_right"></span></a>
+                                    <a href="./categories.html?slug=hanh-dong" class="primary-btn">Xem tất cả <span
+                                            class="arrow_right"></span></a>
                                 </div>
                             </div>
                         </div>
-                        <div id="movies-short" class="row movies-container loading"></div>
+                        <!-- <div id="movies-short" class="row movies-container loading"></div> -->
+                        <div id="movies-short" class="row movies-container loading movie-section"
+                            data-url="https://phim.nguonc.com/api/films/danh-sach/phim-le?page=11"
+                            data-container-id="movies-short">
+                        </div>
                     </div>
                     <div class="live__product">
                         <div class="row">
@@ -252,11 +229,16 @@
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-4">
                                 <div class="btn__all">
-                                    <a href="./categories.html?slug=hanh-dong" class="primary-btn">Xem tất cả <span class="arrow_right"></span></a>
+                                    <a href="./categories.html?slug=hanh-dong" class="primary-btn">Xem tất cả <span
+                                            class="arrow_right"></span></a>
                                 </div>
                             </div>
                         </div>
-                        <div id="movies-tv-shows" class="row movies-container loading"></div>
+                        <!-- <div id="movies-tv-shows" class="row movies-container loading"></div> -->
+                        <div id="movies-tv-shows" class="row movies-container loading movie-section"
+                            data-url="https://phim.nguonc.com/api/films/danh-sach/tv-shows?page=1"
+                            data-container-id="movies-tv-shows">
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-8">
@@ -283,7 +265,8 @@
                                     data-setbg="img/sidebar/tv-2.jpg">
                                     <div class="ep">18 / ?</div>
                                     <div class="view"><i class="fa fa-eye"></i> 9141</div>
-                                    <h5><a href="./anime-details.html?slug=that-hinh-dai-toi-4">Thất hình đại tội 4</a></h5>
+                                    <h5><a href="./anime-details.html?slug=that-hinh-dai-toi-4">Thất hình đại tội 4</a>
+                                    </h5>
                                 </div>
                                 <div class="product__sidebar__view__item set-bg mix week years"
                                     data-setbg="img/sidebar/tv-3.jpg">
@@ -336,7 +319,8 @@
                                         <li>Active</li>
                                         <li>Movie</li>
                                     </ul>
-                                    <h5><a href="./anime-details.html?slug=nguoi-sat-3">Shirogane Tamashii hen Kouhan sen</a></h5>
+                                    <h5><a href="./anime-details.html?slug=nguoi-sat-3">Shirogane Tamashii hen Kouhan
+                                            sen</a></h5>
                                     <span><i class="fa fa-eye"></i> 19.141 Viewes</span>
                                 </div>
                             </div>
@@ -432,42 +416,54 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
     <script>
-        async function fetchData() {
-            const urls = [
-                { url: 'https://phim.nguonc.com/api/films/phim-moi-cap-nhat?page=1', containerId: 'movies-newest' },
-                { url: 'https://phim.nguonc.com/api/films/danh-sach/phim-dang-chieu?page=1', containerId: 'movies-now' },
-                { url: 'https://phim.nguonc.com/api/films/danh-sach/phim-bo?page=1', containerId: 'movies-series' },
-                { url: 'https://phim.nguonc.com/api/films/danh-sach/phim-le?page=11', containerId: 'movies-short' },
-                { url: 'https://phim.nguonc.com/api/films/danh-sach/tv-shows?page=1', containerId: 'movies-tv-shows' },
-            ];
-
-            const renderSkeleton = () => {
-                urls.forEach(({ containerId }) => {
-                    const container = document.getElementById(containerId);
-                    container.classList.add('loading');
-                });
-            };
-
-            const removeSkeleton = (container) => {
-                container.classList.remove('loading');
-            };
-
-            renderSkeleton();
-
+        async function fetchSectionData(url, containerId) {
+            const container = document.getElementById(containerId);
             try {
-                const responses = await Promise.all(urls.map(item => fetch(item.url).then(res => res.json())));
-
-                responses.forEach((data, index) => {
-                    const containerId = urls[index].containerId;
-                    const container = document.getElementById(containerId);
-
-                    renderMovies(container, data);
-                    removeSkeleton(container);
-                });
+                const response = await fetch(url);
+                const data = await response.json();
+                renderMovies(container, data);
+                container.classList.remove('loading');
             } catch (error) {
-                console.error('Error fetching data:', error);
+                console.error(`Error loading data for ${containerId}:`, error);
+                container.innerHTML = '<p class="error">Không thể tải dữ liệu. Vui lòng thử lại sau.</p>';
             }
         }
+        // async function fetchData() {
+        //     const urls = [
+        //         { url: 'https://phim.nguonc.com/api/films/phim-moi-cap-nhat?page=1', containerId: 'movies-newest' },
+        //         { url: 'https://phim.nguonc.com/api/films/danh-sach/phim-dang-chieu?page=1', containerId: 'movies-now' },
+        //         { url: 'https://phim.nguonc.com/api/films/danh-sach/phim-bo?page=1', containerId: 'movies-series' },
+        //         { url: 'https://phim.nguonc.com/api/films/danh-sach/phim-le?page=11', containerId: 'movies-short' },
+        //         { url: 'https://phim.nguonc.com/api/films/danh-sach/tv-shows?page=1', containerId: 'movies-tv-shows' },
+        //     ];
+
+        //     const renderSkeleton = () => {
+        //         urls.forEach(({ containerId }) => {
+        //             const container = document.getElementById(containerId);
+        //             container.classList.add('loading');
+        //         });
+        //     };
+
+        //     const removeSkeleton = (container) => {
+        //         container.classList.remove('loading');
+        //     };
+
+        //     renderSkeleton();
+
+        //     try {
+        //         const responses = await Promise.all(urls.map(item => fetch(item.url).then(res => res.json())));
+
+        //         responses.forEach((data, index) => {
+        //             const containerId = urls[index].containerId;
+        //             const container = document.getElementById(containerId);
+
+        //             renderMovies(container, data);
+        //             removeSkeleton(container);
+        //         });
+        //     } catch (error) {
+        //         console.error('Error fetching data:', error);
+        //     }
+        // }
 
         function renderMovies(container, data) {
             container.innerHTML = data.items
@@ -493,7 +489,26 @@
                 `).join('');
         }
 
-        fetchData();
+        // fetchData();
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Lấy thông tin từ dataset
+                    const { url, containerId } = entry.target.dataset;
+                    // Gọi hàm fetch dữ liệu
+                    fetchSectionData(url, containerId);
+                    // Ngừng quan sát container này
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        // Quan sát tất cả các section
+        document.querySelectorAll('.movie-section').forEach(section => {
+            // Thêm class loading cho skeleton UI
+            section.classList.add('loading');
+            observer.observe(section);
+        });
 
     </script>
 

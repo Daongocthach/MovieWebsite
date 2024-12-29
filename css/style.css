@@ -143,7 +143,11 @@ ol {
 	background-size: cover;
 	background-position: top center;
 }
-
+.set-bg-2 {
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: top center;
+}
 .spad {
 	padding-top: 100px;
 	padding-bottom: 100px;
@@ -2393,3 +2397,19 @@ ol {
 	100% { transform: rotate(360deg); }
 }
   
+.movie-section.loading {
+    background: #25282c;
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    min-height: 300px; /* Chiều cao giả lập */
+    border-radius: 5px;
+}
+
+@keyframes shimmer {
+    from {
+        background-position: 200% 0;
+    }
+    to {
+        background-position: -200% 0;
+    }
+}
