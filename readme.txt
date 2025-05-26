@@ -1,5 +1,6 @@
 # 🎬 Website Xem Phim - HTML/CSS/JS + API phim.nguonc
 
+
 Một website xem phim đơn giản, viết thuần **HTML**, **CSS** và **JavaScript**, sử dụng API từ nguồn công cộng (`phim.nguonc.net` hoặc tương đương) để hiển thị danh sách phim, thông tin chi tiết, và player.
 
 ---
