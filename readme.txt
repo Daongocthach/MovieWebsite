@@ -1,7 +1,6 @@
 # 🎬 Website Xem Phim - HTML/CSS/JS + API phim.nguonc
 
-<img src="https://github.com/Daongocthach/MovieWebsite/blob/main/img/movie-website.jpeg?raw=true" alt="">
-
+![Giao diện](https://github.com/Daongocthach/MovieWebsite/blob/main/img/movie-website.jpeg?raw=true)
 
 Một website xem phim đơn giản, viết thuần **HTML**, **CSS** và **JavaScript**, sử dụng API từ nguồn công cộng (`phim.nguonc.net` hoặc tương đương) để hiển thị danh sách phim, thông tin chi tiết, và player.
 
